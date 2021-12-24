@@ -316,9 +316,10 @@ body {
   .meaning {
     padding-bottom: 50px;
   }
-  .mammamia__text {
-    font-size: 34px;
-    line-height: 38px;
+  .mammamia__text,
+  .meaning__title {
+    font-size: 26px;
+    line-height: 30px;
   }
   .mammamia__text-right,
   .collection__text-right {
@@ -330,8 +331,8 @@ body {
     bottom: -40px;
   }
   .mammamia__box-item {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .meaning__box {
     margin-top: 48px;
@@ -341,6 +342,8 @@ body {
   }
   .meaning__box-text {
     margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .meaning__box-slide {
     position: relative;
@@ -358,8 +361,8 @@ body {
     padding-top: 50px;
   }
   .collection__text {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 30px;
   }
   .collection__description {
     flex-direction: column;
@@ -367,6 +370,12 @@ body {
   .collection__description-text {
     max-width: 100%;
     padding: 5px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .collection__preview-img {
+    width: 100%;
+    height: unset;
   }
 }
 @media (min-width: 320px) {
