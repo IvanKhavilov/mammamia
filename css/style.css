@@ -1,15 +1,4 @@
 @font-face {
-  font-family: "Proba-Pro-Regular";
-  src: url("../fonts/proba_pro_regular.eot");
-  src: url("../fonts/proba_pro_regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/proba_pro_regular.woff2") format("woff2"),
-    url("../fonts/proba_pro_regular.woff") format("woff"),
-    url("../fonts/proba_pro_regular.ttf") format("truetype"),
-    url("../fonts/proba_pro_regular.svg#proba_pro_regular") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
   font-family: "ProbaPro-Light";
   src: url("../fonts/Proba_Pro_Light.eot");
   src: local("☺"), url("../fonts/Proba_Pro_Light.woff") format("woff"),
@@ -24,7 +13,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Proba-Pro-Regular";
+  font-family: "ProbaPro-Light";
   color: #544d46;
   min-width: 320px;
 }
@@ -61,11 +50,9 @@ body {
   position: relative;
 }
 .mammamia__text {
-  font-size: 90px;
-  line-height: 90px;
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
   text-transform: uppercase;
-  vertical-align: top;
 }
 .mammamia__text-right,
 .collection__text-right {
@@ -75,8 +62,8 @@ body {
   position: absolute;
   bottom: 35px;
   right: 0;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   max-width: 276px;
 }
 .mammamia__box {
@@ -87,9 +74,8 @@ body {
   position: relative;
 }
 .mammamia__box-item {
-  font-family: "ProbaPro-Light";
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 26px;
   max-width: 584px;
 }
 .mammamia__box-slide {
@@ -110,7 +96,6 @@ body {
   padding-bottom: 104px;
 }
 .meaning__title {
-  font-style: normal;
   font-weight: 300;
   font-size: 45px;
   line-height: 45px;
@@ -133,7 +118,6 @@ body {
   height: 530px;
 }
 .meaning__box-text {
-  font-family: "ProbaPro-Light";
   font-size: 26px;
   line-height: 34px;
   max-width: 481px;
@@ -148,8 +132,8 @@ body {
   border-bottom: 1px solid #544d46;
 }
 .collection__text {
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 45px;
+  line-height: 45px;
   text-transform: uppercase;
 }
 .collection__description {
@@ -159,10 +143,9 @@ body {
   margin-top: 30px;
 }
 .collection__description-text {
-  font-family: "ProbaPro-Light";
   max-width: 584px;
   font-size: 26px;
-  line-height: 34px;
+  line-height: 26px;
 }
 .collection__preview {
   margin-top: 32px;
@@ -175,14 +158,6 @@ body {
   margin-top: 32px;
 }
 @media (max-width: 1205px) {
-  .mammamia__text {
-    font-size: 60px;
-    line-height: 72px;
-  }
-  .collection__text {
-    font-size: 56px;
-    line-height: 64px;
-  }
   .mammamia__text-description {
     bottom: 20px;
   }
@@ -215,10 +190,6 @@ body {
   }
 }
 @media (max-width: 950px) {
-  .collection__text {
-    font-size: 44px;
-    line-height: 50px;
-  }
   .collection__description-text {
     font-size: 20px;
     line-height: 24px;
@@ -264,10 +235,6 @@ body {
   .mammamia {
     padding-top: 50px;
   }
-  .mammamia__text {
-    font-size: 36px;
-    line-height: 40px;
-  }
   .mammamia__text-description {
     bottom: -35px;
     max-width: 100%;
@@ -278,20 +245,18 @@ body {
     padding-bottom: 40px;
   }
   .mammamia__box-item {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 24px;
   }
-  .meaning__title {
+  .mammamia__text,
+  .meaning__title,
+  .collection__text {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 38px;
   }
   .mammamia__box-slide {
     position: relative;
     transform: translateY(0);
-  }
-  .collection__text {
-    font-size: 34px;
-    line-height: 40px;
   }
 }
 @media (max-width: 640px) {
@@ -317,9 +282,10 @@ body {
     padding-bottom: 50px;
   }
   .mammamia__text,
-  .meaning__title {
-    font-size: 26px;
-    line-height: 30px;
+  .meaning__title,
+  .collection__text {
+    font-size: 28px;
+    line-height: 32px;
   }
   .mammamia__text-right,
   .collection__text-right {
@@ -330,10 +296,6 @@ body {
     line-height: 16px;
     bottom: -40px;
   }
-  .mammamia__box-item {
-    font-size: 18px;
-    line-height: 22px;
-  }
   .meaning__box {
     margin-top: 48px;
     display: flex;
@@ -342,8 +304,6 @@ body {
   }
   .meaning__box-text {
     margin-top: 20px;
-    font-size: 18px;
-    line-height: 22px;
   }
   .meaning__box-slide {
     position: relative;
@@ -370,19 +330,14 @@ body {
   .collection__description-text {
     max-width: 100%;
     padding: 5px 0;
-    font-size: 18px;
-    line-height: 22px;
   }
   .collection__preview-img {
     width: 100%;
     height: unset;
   }
 }
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   body {
-    overflow: auto;
-  }
-  .collection__text {
-    word-wrap: break-word;
+    overflow-x: scroll;
   }
 }
